@@ -1,0 +1,13 @@
+:root {
+  --neutral-light: #ffffff;
+  --neutral-medium: #d7d5ca;
+  --neutral-medium-variant: #c2beba;
+  --neutral-warm: #a47d5e;
+  --neutral-warm-variant: #dfc691;
+  --neutral-dark: #56534c;
+  --neutral-dark-variant: #9e9c93;
+  --background-light: #f3f1e9;
+  --transoverlay: 86, 83, 76;
+  --opacity-transoverlay: 0.5;
+  --emphasis: #c9b176;
+}
