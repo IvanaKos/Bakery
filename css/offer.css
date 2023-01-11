@@ -146,8 +146,8 @@
   margin-bottom: 120px;
 }
 
-.backpaper,
-.backpaper:last-child {
+.backpage,
+.backpage:last-child {
   width: 20%;
   height: 90%;
   background-color: var(--background-light);
