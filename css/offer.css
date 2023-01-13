@@ -1,5 +1,6 @@
 #offer {
-  background: center/cover url(../assets/img/offer-background.png) no-repeat;
+  background: top 37% right 33%/110% url(../assets/img/offer-background.png)
+    no-repeat;
   padding: 90px 0;
   position: relative;
 }
@@ -21,8 +22,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
-  filter: drop-shadow(8px 4px 14px #000);
 }
 
 .special-offer {
@@ -54,6 +53,11 @@
   font: 36px "Alegreya";
 }
 
+.special-offer-menu {
+  position: relative;
+  filter: drop-shadow(8px 4px 14px #000);
+}
+
 .offer-menu {
   width: 440px;
   display: flex;
@@ -83,7 +87,6 @@
 .offer-menu-container {
   width: calc(100% - 20px);
   height: calc(100% - 20px);
-  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -158,10 +161,10 @@
 .backpage:last-child {
   width: 20%;
   height: 87%;
-  background-color: #d8d5c7;
   position: absolute;
   right: 63px;
   z-index: -1;
+  background-color: #d8d5c7;
   background-image: repeating-linear-gradient(
       1deg,
       #9e9c93,
@@ -213,8 +216,7 @@
   bottom: 120px;
   right: 320px;
   z-index: 1;
-  width: 190px;
-  padding: 15px 0;
+  padding: 15px 70px;
   margin-bottom: 60px;
   border: 1px solid var(--neutral-dark-variant);
   color: var(--neutral-warm);
