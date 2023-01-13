@@ -1,5 +1,5 @@
 #offer {
-  background: top 37% right 33%/110% url(../assets/img/offer-background.png)
+  background: top 43% right 33%/110% url(../assets/img/offer-background.png)
     no-repeat;
   padding: 90px 0;
   position: relative;
@@ -26,6 +26,7 @@
 
 .special-offer {
   text-align: center;
+  z-index: 1;
 }
 
 .special-offer h2 {
@@ -35,12 +36,11 @@
 
 .special-offer h3 {
   font-size: 18px;
-  margin-bottom: 0;
 }
 
 .special-offer dt {
   color: var(--neutral-light);
-  margin: 50px 0 15px 0;
+  margin: 10px 0 15px 0;
 }
 
 .special-offer dd {
