@@ -52,6 +52,15 @@ nav li {
   color: var(--neutral-light);
 }
 
+nav li::after {
+  content: "~";
+  margin-left: 35px;
+}
+
+nav li:last-child::after {
+  content: "";
+}
+
 header a {
   font-size: 14px;
   text-transform: uppercase;
