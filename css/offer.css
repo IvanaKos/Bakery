@@ -38,19 +38,27 @@
   font-size: 18px;
 }
 
-.special-offer dt {
+.menu-item h4 {
   color: var(--neutral-light);
+  font-size: 30px;
   margin: 10px 0 15px 0;
 }
 
-.special-offer dd {
+.menu-item p {
   color: var(--neutral-medium-variant);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-.special-offer .price {
+.menu-item .price {
   color: var(--neutral-warm-variant);
   font: 36px "Alegreya";
+}
+
+.menu-item::after {
+  content: "";
+  height: 35px;
+  display: block;
+  background: url(../assets/svg/special-offer-decoration.svg) center no-repeat;
 }
 
 .special-offer-menu {
