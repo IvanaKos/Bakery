@@ -3,6 +3,21 @@
   padding: 100px 0 115px 0;
 }
 
+#additional-recipes h2 {
+  position: relative;
+}
+
+#additional-recipes h2::before {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  right: 215px;
+  width: 700px;
+  height: 140px;
+  background: top url(../assets/svg/additional-recipes-background.svg) no-repeat;
+  opacity: 0.2;
+}
+
 .ingredients-list {
   padding-top: 60px;
 }
