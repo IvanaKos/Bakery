@@ -32,10 +32,7 @@ header::after {
 #header-nav {
   position: relative;
   padding: 20px 0;
-  background-color: rgba(
-    var(--transoverlay),
-    var(--opacity-transoverlay)
-  ); /*Should opacity value be in variables or just write it directly here?*/
+  background-color: rgba(var(--transoverlay), var(--opacity-transoverlay));
 }
 
 #header-nav .wraper {
@@ -83,6 +80,7 @@ header a {
   display: flex;
   gap: 30px;
 }
+
 .social img {
   width: 15px;
   height: 15px;
@@ -100,13 +98,13 @@ header a {
 }
 
 #hero a {
-  font-weight: bold;
   display: block;
   width: 200px;
   padding: 20px 40px;
   margin: 0 auto 215px auto;
   border: 1px dashed var(--neutral-dark-variant);
   background-color: rgba(var(--transoverlay), var(--opacity-transoverlay));
+  font-weight: bold;
 }
 
 h1::after {

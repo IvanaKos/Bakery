@@ -1,8 +1,8 @@
 #offer {
+  position: relative;
   background: top 43% right 33%/110% url(../assets/img/offer-background.png)
     no-repeat;
   padding: 90px 0;
-  position: relative;
 }
 
 #offer::after {
@@ -55,8 +55,8 @@
 
 .menu-item::after {
   content: "";
-  height: 35px;
   display: block;
+  height: 35px;
   background: url(../assets/svg/special-offer-decoration.svg) center no-repeat;
 }
 
@@ -66,12 +66,12 @@
 }
 
 .offer-menu {
+  position: relative;
   width: 440px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--background-light);
-  position: relative;
   clip-path: polygon(100% 0, 100% 100%, 8% 100%, 0 95%, 0 0);
 }
 
@@ -144,10 +144,10 @@
 }
 
 .offer-menu p {
-  margin: 40px;
   line-height: 2;
   letter-spacing: normal;
   padding-bottom: 155px;
+  margin: 40px;
 }
 
 .offer-menu-header {
@@ -164,9 +164,9 @@
 
 .backpage,
 .backpage:last-child {
+  position: absolute;
   width: 20%;
   height: 87%;
-  position: absolute;
   right: 63px;
   z-index: -1;
   background-color: #d8d5c7;

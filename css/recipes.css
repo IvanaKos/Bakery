@@ -36,7 +36,6 @@
 }
 
 .recipe-side-photo {
-  overflow: hidden;
   display: flex;
   justify-content: center;
   clip-path: polygon(100% 0, 100% 100%, 13% 100%, 0 91%, 0 0);

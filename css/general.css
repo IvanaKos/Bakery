@@ -40,20 +40,20 @@ h1 {
 }
 
 h2 {
-  font-weight: bold;
   font-size: 48px;
+  font-weight: bold;
   letter-spacing: 0.2rem;
   color: var(--neutral-dark);
   margin-bottom: 15px;
 }
 
 h3 {
-  font-weight: bold;
   font-size: 14px;
-  text-transform: uppercase;
+  font-weight: bold;
   letter-spacing: 0.1rem;
   color: var(--neutral-warm);
   margin-bottom: 65px;
+  text-transform: uppercase;
 }
 
 h4 {
@@ -68,7 +68,7 @@ a {
 p {
   font: 14px/1.5 "Montserrat", sans-serif;
   margin-bottom: 40px;
-  letter-spacing: 0.1rem;
+  letter-spacing: 1px;
 }
 
 .prep-info {
@@ -100,9 +100,7 @@ p {
 .prep-info p,
 .prep-info p:first-child,
 .prep-info p:last-child {
-  font-family: "Alegreya", serif;
-  font-size: 18px;
-  font-weight: bold;
+  font: bold 18px "Alegreya", serif;
   margin-bottom: 0;
 }
 

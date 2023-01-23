@@ -7,6 +7,10 @@
   text-align: center;
 }
 
+#specialty .col-50:first-child {
+  padding-right: 55px;
+}
+
 .team-member {
   position: relative;
 }
@@ -25,8 +29,7 @@
 }
 
 .team-member-name p {
-  font-family: "Alegreya", serif;
-  font-size: 24px;
+  font: 24px "Alegreya", serif;
   color: var(--neutral-dark);
   letter-spacing: 0.1rem;
   border-top: 1px solid var(--neutral-medium);
@@ -51,11 +54,11 @@ blockquote {
 
 .quote::before,
 .quote::after {
-  color: var(--neutral-medium);
-  font-size: 60px;
   position: absolute;
   width: 30px;
   height: 15px;
+  color: var(--neutral-medium);
+  font-size: 60px;
 }
 
 .quote::before {
@@ -103,9 +106,7 @@ blockquote {
   top: 35%;
   left: 20%;
   color: var(--emphasis);
-  font-family: "Alegreya", serif; /*Group in font shorthand! */
-  font-size: 30px;
+  font: 30px/1.2 "Alegreya", serif;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  line-height: 1.2;
 }
