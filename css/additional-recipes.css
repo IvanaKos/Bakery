@@ -16,16 +16,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 100px;
+  margin: 10px 100px 0 0;
 }
 
-.ingredient dl {
-  text-align: center;
-}
-
-.ingredient dt {
+.ingredient h4 {
   margin: 20px 0;
   color: var(--neutral-warm);
+}
+
+.ingredient p {
+  text-align: center;
+  letter-spacing: normal;
 }
 
 .ingredient-photo {
