@@ -1,17 +1,15 @@
 #additional-recipes {
+  position: relative;
   background-color: var(--background-light);
   padding: 100px 0 115px 0;
 }
 
-#additional-recipes h2 {
-  position: relative;
-}
-
-#additional-recipes h2::before {
+#additional-recipes::before {
   content: "";
   position: absolute;
-  bottom: 7px;
-  right: 215px;
+  z-index: 1;
+  top: 0;
+  right: 320px;
   width: 700px;
   height: 140px;
   background: top url(../assets/svg/additional-recipes-background.svg) no-repeat;
@@ -19,7 +17,7 @@
 }
 
 .ingredients-list {
-  padding-top: 60px;
+  padding: 60px 100px 0 0;
 }
 
 #additional-recipes h3 {
@@ -31,7 +29,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10px 100px 0 0;
+  margin-top: 10px;
 }
 
 .ingredient h4 {
@@ -58,7 +56,7 @@
 
 .additional-recipe-card {
   position: relative;
-  width: 780px;
+  width: calc(100% - 30px);
   height: 555px;
   background: right/cover url(../assets/img/additional-recipe-card-photo.png)
     no-repeat;

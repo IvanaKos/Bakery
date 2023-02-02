@@ -19,6 +19,10 @@ body {
   margin: auto;
 }
 
+.col-65 {
+  width: 65%;
+}
+
 .col-60 {
   width: 60%;
 }
@@ -29,6 +33,10 @@ body {
 
 .col-40 {
   width: 40%;
+}
+
+.col-35 {
+  width: 35%;
 }
 
 h1 {
