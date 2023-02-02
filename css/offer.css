@@ -162,8 +162,7 @@
   margin-bottom: 120px;
 }
 
-.backpage,
-.backpage:last-child {
+.backpage {
   position: absolute;
   width: 20%;
   height: 87%;
@@ -208,7 +207,6 @@
 }
 
 .backpage:last-child {
-  width: 20%;
   height: 78%;
   right: 47px;
   z-index: -2;
