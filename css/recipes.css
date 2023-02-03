@@ -81,3 +81,19 @@
   border-radius: 50%;
   overflow: hidden;
 }
+
+.arrow-right,
+.arrow-left {
+  width: 35px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+}
+
+.arrow-left {
+  background: center/contain url(../assets/svg/arrow-left.svg) no-repeat;
+}
+
+.arrow-right {
+  background: center/contain url(../assets/svg/arrow-right.svg) no-repeat;
+}
