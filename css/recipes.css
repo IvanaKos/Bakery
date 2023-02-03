@@ -2,13 +2,13 @@
   display: flex;
   justify-content: center;
   background: top/cover no-repeat url(../assets/img/recipes-background.png);
-  padding: 140px 265px 110px 265px;
 }
 
 .recipe-card {
   display: flex;
   position: relative;
   width: 950px;
+  margin: 140px 0 110px 0;
   filter: drop-shadow(-6px 7px 17px rgba(0, 0, 0, 0.41));
 }
 
