@@ -58,7 +58,7 @@
 #recipes .prep-info {
   position: absolute;
   top: -40px;
-  left: 470px;
+  right: -40px;
   box-shadow: -16px 17px 27px -3px rgba(105, 105, 105, 0.33);
   -webkit-box-shadow: -16px 17px 27px -3px rgba(105, 105, 105, 0.33);
   -moz-box-shadow: -16px 17px 27px -3px rgba(105, 105, 105, 0.33);
