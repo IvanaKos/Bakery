@@ -89,11 +89,10 @@ blockquote {
 }
 
 .badge {
-  margin: auto;
   position: absolute;
-  top: 26%;
-  left: 0;
-  right: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 250px;
 }
 
@@ -103,8 +102,10 @@ blockquote {
 
 .badge p {
   position: absolute;
-  top: 35%;
-  left: 20%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 160px;
   color: var(--emphasis);
   font: 30px/1.2 "Alegreya", serif;
   text-transform: uppercase;
