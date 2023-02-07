@@ -165,10 +165,6 @@
 .backpage {
   position: absolute;
   width: 20%;
-  height: 87%;
-  right: 63px;
-  z-index: -1;
-  background-color: #d8d5c7;
   background-image: repeating-linear-gradient(
       1deg,
       #9e9c93,
@@ -204,6 +200,13 @@
   background-size: 1px 100%, 90% 1px, 1px 98%, 90% 1px;
   background-position: 0 0, 0 0, 90% 98%, 0 98%;
   background-repeat: no-repeat;
+}
+
+.backpage:nth-child(2) {
+  height: 87%;
+  right: 63px;
+  z-index: -1;
+  background-color: #d8d5c7;
 }
 
 .backpage:last-child {
