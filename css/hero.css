@@ -1,0 +1,70 @@
+#hero {
+  height: 100vh;
+  background: center/cover url(../assets/img/hero-background.png) no-repeat;
+  text-align: center;
+  border-bottom: 10px solid var(--neutral-light);
+}
+
+#hero .wraper {
+  flex-direction: column;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(40, 40, 40);
+  background: radial-gradient(
+    circle,
+    rgba(40, 40, 40, 1) 0%,
+    rgba(70, 70, 70, 1) 22%,
+    rgba(130, 130, 130, 0.2361987031140581) 45%
+  );
+  opacity: 0.6;
+}
+
+#hero::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -55px;
+  width: 100%;
+  height: 110px;
+  background: center/auto url(../assets/svg/badge-border.svg) no-repeat,
+    center/auto url(../assets/svg/bread.svg) no-repeat;
+}
+
+.hero-content {
+  position: relative;
+}
+
+#hero p {
+  font-size: 24px;
+  color: var(--neutral-light);
+  margin-bottom: 70px;
+}
+
+#hero a {
+  display: block;
+  width: 200px;
+  padding: 20px 40px;
+  margin: 0 auto 0 auto;
+  border: 1px dashed var(--neutral-dark-variant);
+  background-color: rgba(var(--transoverlay), var(--opacity-transoverlay));
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  color: var(--neutral-light);
+}
+
+h1::after {
+  content: "";
+  display: block;
+  height: 15px;
+  background: center url(../assets/svg/dashed-wave.svg) no-repeat;
+  margin-top: 50px;
+}
