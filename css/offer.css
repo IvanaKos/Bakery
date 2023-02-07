@@ -7,14 +7,14 @@
 
 #offer::after {
   content: "";
-  background: 1060px 560px url(../assets/svg/offer-menu-background.svg)
-    no-repeat;
+  background: url(../assets/svg/offer-menu-background.svg) no-repeat;
   position: absolute;
-  top: 0px;
   right: 0px;
   bottom: 0px;
-  left: 0px;
   opacity: 0.2;
+  width: 410px;
+  height: 284px;
+  pointer-events: none;
 }
 
 #offer .col-50 {
@@ -219,8 +219,7 @@
 .open-menu-link {
   display: block;
   position: absolute;
-  bottom: 120px;
-  right: 320px;
+  bottom: 0;
   z-index: 1;
   padding: 15px 70px;
   margin-bottom: 60px;
