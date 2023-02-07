@@ -1,4 +1,5 @@
 #hero {
+  position: relative;
   height: 100vh;
   background: center/cover url(../assets/img/hero-background.png) no-repeat;
   text-align: center;
