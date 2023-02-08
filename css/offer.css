@@ -9,8 +9,8 @@
   content: "";
   background: url(../assets/svg/offer-menu-background.svg) no-repeat;
   position: absolute;
-  right: 0px;
-  bottom: 0px;
+  right: -35px;
+  bottom: -20px;
   opacity: 0.2;
   width: 410px;
   height: 284px;
@@ -45,12 +45,14 @@
 
 .menu-item p {
   color: var(--neutral-medium-variant);
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-.menu-item .price {
+.price {
+  display: block;
+  margin-bottom: 10px;
   color: var(--neutral-warm-variant);
-  font: 36px "Alegreya";
+  font-size: 36px;
 }
 
 .menu-item::after {
@@ -58,6 +60,10 @@
   display: block;
   height: 35px;
   background: url(../assets/svg/special-offer-decoration.svg) center no-repeat;
+}
+
+.menu-item:last-of-type::after {
+  display: none;
 }
 
 .special-offer-menu {
@@ -220,7 +226,6 @@
   display: block;
   position: absolute;
   bottom: 0;
-  z-index: 1;
   padding: 15px 70px;
   margin-bottom: 60px;
   border: 1px solid var(--neutral-dark-variant);
