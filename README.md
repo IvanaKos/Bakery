@@ -7,9 +7,6 @@ Bakery Website
 
 Webpage content:
 
-
-
-
 ---
 
 Folder structure:
@@ -24,7 +21,9 @@ Bakery
         I       I________footer.css
         I       I________general.css
         I       I________header.css
+        I       I________hero.css
         I       I________offer.css
+        I       I________prep-cards.css
         I       I________recipes.css
         I       I________reset.css
         I       I________specialty.css
