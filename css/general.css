@@ -1,0 +1,84 @@
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Alegreya", serif;
+}
+
+.wraper {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.col-65 {
+  width: 65%;
+}
+
+.col-60 {
+  width: 60%;
+}
+
+.col-50 {
+  width: 50%;
+}
+
+.col-40 {
+  width: 40%;
+}
+
+.col-35 {
+  width: 35%;
+}
+
+h1 {
+  font-size: 92px;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  color: var(--neutral-light);
+  margin: 20% 0 6% 0;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  color: var(--neutral-dark);
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  color: var(--neutral-warm);
+  margin-bottom: 65px;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font: 14px/1.5 "Montserrat", sans-serif;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+button {
+  font: inherit;
+}

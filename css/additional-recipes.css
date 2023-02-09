@@ -1,0 +1,127 @@
+#additional-recipes {
+  position: relative;
+  background-color: var(--background-light);
+  padding: 100px 0 115px 0;
+}
+
+#additional-recipes .wraper {
+  flex-direction: column;
+}
+
+.additional-recipes-title {
+  width: 100%;
+  text-align: center;
+}
+
+.additional-recipes-title::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  height: 140px;
+  background: top url(../assets/svg/additional-recipes-background.svg) no-repeat;
+  opacity: 0.2;
+}
+
+.additional-recipes-content {
+  display: flex;
+  align-items: center;
+}
+
+.ingredients-list {
+  padding-right: 100px;
+}
+
+#additional-recipes h3 {
+  margin-bottom: 0;
+}
+
+.ingredient {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.ingredient h4 {
+  margin: 20px 0;
+  color: var(--neutral-warm);
+}
+
+.ingredient p {
+  text-align: center;
+  letter-spacing: normal;
+}
+
+.ingredient:last-child p {
+  margin-bottom: 0;
+}
+
+.ingredient-photo {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(231, 227, 212, 1);
+  -moz-box-shadow: 0px 10px 10px 0px rgba(231, 227, 212, 1);
+  box-shadow: 0px 10px 10px 0px rgba(231, 227, 212, 1);
+}
+
+.additional-recipe-card {
+  position: relative;
+  width: calc(100% - 30px);
+  height: 555px;
+  background: right/cover url(../assets/img/additional-recipe-card-photo.png)
+    no-repeat;
+  margin-left: 30px;
+  border: 10px solid var(--neutral-light);
+  -webkit-box-shadow: 0px 10px 14px 1px rgba(86, 83, 76, 0.19);
+  -moz-box-shadow: 0px 10px 14px 1px rgba(86, 83, 76, 0.19);
+  box-shadow: 0px 10px 14px 1px rgba(86, 83, 76, 0.19);
+}
+
+.additional-recipe-card button {
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+  padding: 18px 30px;
+  background-color: var(--neutral-light);
+  border: 1px dashed var(--emphasis);
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--emphasis);
+  cursor: pointer;
+}
+
+.prep-info-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: absolute;
+  top: -32px;
+  right: 0;
+}
+
+.additional-recipe-card .primary-info {
+  -webkit-box-shadow: 0px 10px 14px 1px rgba(86, 83, 76, 0.19);
+  -moz-box-shadow: 0px 10px 14px 1px rgba(86, 83, 76, 0.19);
+  box-shadow: 0px 10px 14px 1px rgba(86, 83, 76, 0.19);
+}
+
+.prep-info-card > .secondary-info {
+  border-bottom: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+.prep-info-card > .secondary-info ~ .secondary-info {
+  border: none;
+}

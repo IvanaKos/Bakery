@@ -1,0 +1,99 @@
+#recipes {
+  display: flex;
+  justify-content: center;
+  background: top/cover no-repeat url(../assets/img/recipes-background.png);
+}
+
+.recipe-card {
+  display: flex;
+  position: relative;
+  width: 950px;
+  margin: 140px 0 110px 0;
+  filter: drop-shadow(-6px 7px 17px rgba(0, 0, 0, 0.41));
+}
+
+.recipe-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background: var(--neutral-light);
+  padding: 80px 50px 40px 50px;
+  z-index: 0;
+}
+
+.recipe-description::before {
+  content: "";
+  background: bottom right/40% url(../assets/svg/recipe-card-background.svg)
+    no-repeat;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.recipe-side-photo {
+  display: flex;
+  justify-content: center;
+  clip-path: polygon(100% 0, 100% 100%, 13% 100%, 0 91%, 0 0);
+}
+
+.recipe-side-photo::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #fbfbfb;
+  -webkit-box-shadow: 8px 0px 11px 0px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 8px 0px 11px 0px rgba(0, 0, 0, 0.48);
+  box-shadow: 8px 0px 11px 0px rgba(0, 0, 0, 0.48);
+}
+
+#recipes .prep-info {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  box-shadow: -16px 17px 27px -3px rgba(105, 105, 105, 0.33);
+  -webkit-box-shadow: -16px 17px 27px -3px rgba(105, 105, 105, 0.33);
+  -moz-box-shadow: -16px 17px 27px -3px rgba(105, 105, 105, 0.33);
+}
+
+.slider-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  z-index: 1;
+}
+
+.preview-photo {
+  display: flex;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.arrow-right,
+.arrow-left {
+  width: 35px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+}
+
+.arrow-left {
+  background: center/contain url(../assets/svg/arrow-left.svg) no-repeat;
+}
+
+.arrow-right {
+  background: center/contain url(../assets/svg/arrow-right.svg) no-repeat;
+}

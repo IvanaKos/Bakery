@@ -1,0 +1,57 @@
+.prep-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: var(--neutral-light);
+  padding: 30px 45px;
+  z-index: 0;
+}
+
+.primary-info::before {
+  content: "";
+  background: center/100% url(../assets/svg/total-prep-time-background.svg)
+    no-repeat;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.prep-info span {
+  font-size: 98px;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: var(--emphasis);
+  line-height: 1;
+}
+
+.prep-info span:first-child,
+.prep-info span:last-child {
+  font-size: 18px;
+}
+
+.prep-info span:first-child {
+  text-transform: uppercase;
+  color: var(--neutral-warm);
+}
+
+.prep-info span:last-child {
+  color: #979285;
+  margin-top: 10px;
+}
+
+.secondary-info {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.secondary-info span {
+  font-size: 60px;
+  color: var(--neutral-dark);
+}

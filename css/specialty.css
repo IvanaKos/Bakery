@@ -1,0 +1,111 @@
+#specialty {
+  padding: 100px 0;
+  background-image: url(../assets/img/specialty-background.png);
+}
+
+#specialty .col-50 {
+  text-align: center;
+}
+
+#specialty .col-50:first-child {
+  padding-right: 55px;
+}
+
+.team-member {
+  position: relative;
+}
+
+.team-member h2 {
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: normal;
+}
+
+.team-member-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.team-member-name p {
+  font: 24px "Alegreya", serif;
+  color: var(--neutral-dark);
+  letter-spacing: 0.1rem;
+  border-top: 1px solid var(--neutral-medium);
+  border-bottom: 1px solid var(--neutral-medium);
+  padding: 10px 15px;
+  margin: 0;
+}
+
+.team-member img {
+  border-radius: 50%;
+  margin: 0 20px;
+}
+
+blockquote {
+  font-size: 24px;
+  color: var(--neutral-warm);
+}
+
+.quote {
+  position: relative;
+}
+
+.quote::before,
+.quote::after {
+  position: absolute;
+  width: 30px;
+  height: 15px;
+  color: var(--neutral-medium);
+  font-size: 60px;
+}
+
+.quote::before {
+  content: open-quote;
+  top: -25px;
+  left: 85px;
+}
+
+.quote::after {
+  content: close-quote;
+  left: 480px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+
+.img-holder {
+  width: 285px;
+  height: 245px;
+  overflow: hidden;
+  outline: 4px solid white;
+  outline-offset: -10px;
+}
+
+.badge {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge img {
+  opacity: 0.9;
+}
+
+.badge p {
+  position: absolute;
+  margin-bottom: 0;
+  color: var(--emphasis);
+  font: 30px/1.2 "Alegreya", serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
