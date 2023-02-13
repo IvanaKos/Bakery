@@ -11,15 +11,11 @@ header {
 
 #header-nav .wraper {
   align-items: center;
-}
-
-.logo {
-  margin-right: auto;
+  justify-content: space-between;
 }
 
 nav {
   display: flex;
-  flex: 1;
   justify-content: center;
 }
 
@@ -30,7 +26,6 @@ nav ul {
 }
 
 nav li {
-  justify-content: space-between;
   color: var(--neutral-light);
 }
 
@@ -41,6 +36,7 @@ nav li::after {
 
 nav li:last-child::after {
   content: "";
+  margin-left: 0;
 }
 
 header a {
@@ -58,4 +54,33 @@ header a {
 .social img {
   width: 15px;
   height: 15px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 1400px) {
+  nav ul {
+    gap: 20px;
+  }
+
+  nav li::after {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  nav,
+  .social {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  #header-nav .wraper {
+    justify-content: space-around;
+  }
 }

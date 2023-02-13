@@ -1,4 +1,5 @@
 #offer {
+  overflow: hidden;
   position: relative;
   background: top 43% right 33%/110% url(../assets/img/offer-background.png)
     no-repeat;
