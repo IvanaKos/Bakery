@@ -1,9 +1,13 @@
 #specialty {
   padding: 100px 0;
-  background-image: url(../assets/img/specialty-background.png);
+  background: center/cover url(../assets/img/specialty-background.png) no-repeat;
 }
 
 #specialty .col-50 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -64,15 +68,16 @@ blockquote {
 .quote::before {
   content: open-quote;
   top: -25px;
-  left: 85px;
+  left: 0;
 }
 
 .quote::after {
   content: close-quote;
-  left: 480px;
+  right: 0;
 }
 
 .gallery {
+  max-width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -81,7 +86,7 @@ blockquote {
 }
 
 .img-holder {
-  width: 285px;
+  width: calc(50% - 10px);
   height: 245px;
   overflow: hidden;
   outline: 4px solid white;
@@ -108,4 +113,27 @@ blockquote {
   font: 30px/1.2 "Alegreya", serif;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .img-holder {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #specialty .col-50:first-child {
+    padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .gallery {
+    gap: 10px;
+  }
+
+  .img-holder {
+    width: calc(50% - 5px);
+    height: 170px;
+  }
 }
