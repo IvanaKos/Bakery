@@ -106,4 +106,8 @@ button {
   .col-50 {
     width: 100%;
   }
+
+  .wraper {
+    max-width: 90%;
+  }
 }
