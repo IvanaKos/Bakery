@@ -1,4 +1,5 @@
 #recipes {
+  overflow: hidden;
   display: flex;
   justify-content: center;
   background: top/cover no-repeat url(../assets/img/recipes-background.png);
