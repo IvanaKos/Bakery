@@ -45,7 +45,7 @@ h1 {
   font-weight: bold;
   letter-spacing: 0.3rem;
   color: var(--neutral-light);
-  margin: 20% 0 6% 0;
+  margin: 25% 0 6% 0;
 }
 
 h2 {
@@ -94,11 +94,20 @@ button {
   .col-50 {
     width: 70%;
   }
+
+  h1 {
+    font-size: 78px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .col-50 {
     width: 80%;
+  }
+
+  h1 {
+    font-size: 64px;
+    margin-top: 40%;
   }
 }
 
@@ -109,5 +118,9 @@ button {
 
   .wraper {
     max-width: 90%;
+  }
+
+  h1 {
+    font-size: 52px;
   }
 }
