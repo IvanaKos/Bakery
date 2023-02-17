@@ -14,7 +14,7 @@ body {
 
 .wraper {
   width: 1200px;
-  max-width: 90%;
+  max-width: 85%;
   display: flex;
   justify-content: center;
   margin: auto;
@@ -61,7 +61,7 @@ h3 {
   font-weight: bold;
   letter-spacing: 0.1rem;
   color: var(--neutral-warm);
-  margin-bottom: 65px;
+  margin-bottom: 12%;
   text-transform: uppercase;
 }
 
@@ -85,12 +85,26 @@ button {
 }
 
 @media only screen and (max-width: 992px) {
+  .wraper {
+    flex-direction: column;
+    align-items: center;
+    gap: 90px;
+  }
+
+  .col-50 {
+    width: 70%;
+  }
+
   h1 {
     font-size: 78px;
   }
 }
 
 @media only screen and (max-width: 768px) {
+  .col-50 {
+    width: 80%;
+  }
+
   h1 {
     font-size: 64px;
     margin-top: 40%;
@@ -98,6 +112,14 @@ button {
 }
 
 @media only screen and (max-width: 576px) {
+  .col-50 {
+    width: 100%;
+  }
+
+  .wraper {
+    max-width: 90%;
+  }
+
   h1 {
     font-size: 52px;
   }
