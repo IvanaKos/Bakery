@@ -87,6 +87,8 @@ button {
 @media only screen and (max-width: 992px) {
   #header-nav .wraper {
     flex-direction: row;
+  }
+
   .wraper {
     flex-direction: column;
     align-items: center;
