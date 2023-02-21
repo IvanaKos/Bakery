@@ -45,7 +45,7 @@ h1 {
   font-weight: bold;
   letter-spacing: 0.3rem;
   color: var(--neutral-light);
-  margin: 25% 0 6% 0;
+  margin: 22% 0 6% 0;
 }
 
 h2 {
@@ -85,6 +85,10 @@ button {
 }
 
 @media only screen and (max-width: 992px) {
+  #header-nav .wraper {
+    flex-direction: row;
+  }
+
   h1 {
     font-size: 78px;
   }
