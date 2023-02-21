@@ -104,6 +104,18 @@ button {
   }
 }
 
+@media only screen and (max-width: 1200px) {
+  h2 {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  h2 {
+    font-size: 36px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .col-50 {
     width: 80%;
