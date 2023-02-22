@@ -154,3 +154,18 @@
     margin-top: 5%;
   }
 }
+
+@media only screen and (max-width: 567px) {
+  #recipes .prep-info {
+    top: -50px;
+  }
+
+  .recipe-main {
+    width: 95%;
+    padding: 25% 10% 10% 10%;
+  }
+
+  .recipe-side-photo {
+    width: 95%;
+  }
+}
