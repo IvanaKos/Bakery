@@ -280,11 +280,7 @@
     right: -160px;
   }
 
-  .backpage:nth-child(2) {
-    right: 2%;
-  }
-
-  .backpage:last-child {
-    right: -1%;
+  .backpage {
+    display: none;
   }
 }
