@@ -55,3 +55,49 @@
   font-size: 60px;
   color: var(--neutral-dark);
 }
+
+@media only screen and (max-width: 1200px) {
+  .prep-info {
+    width: 160px;
+    height: 160px;
+    padding: 20px;
+  }
+
+  .prep-info span {
+    font-size: 70px;
+  }
+
+  .prep-info span:first-child,
+  .prep-info span:last-child {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .prep-info {
+    width: 120px;
+    height: 120px;
+    padding: 35px 25px;
+  }
+
+  .prep-info span {
+    font-size: 56px;
+  }
+
+  .prep-info span:first-child,
+  .prep-info span:last-child {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .prep-info {
+    width: 100px;
+    height: 100px;
+    padding: 20px 10px;
+  }
+
+  .prep-info span {
+    font-size: 42px;
+  }
+}
