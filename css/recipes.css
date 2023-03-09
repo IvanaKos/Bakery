@@ -155,6 +155,13 @@
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .preview-photo {
+    width: 55px;
+    height: 55px;
+  }
+}
+
 @media only screen and (max-width: 567px) {
   #recipes .prep-info {
     top: -50px;
@@ -167,5 +174,33 @@
 
   .recipe-side-photo {
     width: 95%;
+  }
+
+  .preview-photo {
+    background-color: var(--neutral-warm);
+    width: 8px;
+    height: 8px;
+  }
+
+  .preview-photo img {
+    display: none;
+  }
+  .arrow-left,
+  .arrow-right {
+    position: absolute;
+    top: 10%;
+  }
+
+  .arrow-left {
+    left: 10%;
+  }
+
+  .arrow-right {
+    right: 10%;
+  }
+
+  .slider-container {
+    justify-content: center;
+    gap: 25px;
   }
 }

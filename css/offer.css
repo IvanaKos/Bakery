@@ -211,14 +211,14 @@
 
 .backpage:nth-child(2) {
   height: 87%;
-  right: 63px;
+  right: calc(50% - 235px);
   z-index: -1;
   background-color: #d8d5c7;
 }
 
 .backpage:last-child {
   height: 78%;
-  right: 47px;
+  right: calc(50% - 250px);
   z-index: -2;
   background-color: #c0bcb1;
 }
@@ -235,21 +235,6 @@
   font-weight: bold;
   text-align: center;
 }
-@media only screen and (max-width: 1400px) {
-  #offer::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    opacity: 0.2;
-  }
-
-  .backpage {
-    display: none;
-  }
-}
 
 @media only screen and (max-width: 992px) {
   #offer {
@@ -257,8 +242,22 @@
     background-size: cover;
   }
 
+  #offer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--neutral-dark);
+    opacity: 0.3;
+  }
+
   .special-offer h2 {
     font-size: 52px;
+  }
+
+  .special-offer h3 {
+    color: var(--neutral-warm-variant);
   }
 
   .offer-menu-container {
@@ -279,5 +278,9 @@
 
   #offer::after {
     right: -160px;
+  }
+
+  .backpage {
+    display: none;
   }
 }
