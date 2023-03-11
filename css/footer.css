@@ -1,5 +1,4 @@
 footer {
-  overflow: hidden;
   background-color: var(--background-light);
   padding-bottom: 70px;
 }
@@ -25,4 +24,38 @@ footer a {
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  footer .wraper {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    row-gap: 30px;
+  }
+
+  footer a {
+    width: 100%;
+    text-align: center;
+    order: 1;
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  footer .wraper {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .footer-nav ul {
+    padding: 20px 10px;
+    flex-direction: column;
+    text-align: center;
+  }
+  footer nav li::after {
+    content: none;
+  }
 }
