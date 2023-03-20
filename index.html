@@ -20,29 +20,34 @@
           <a class="logo" href="">
             <img src="assets/img/gustoso-white.png" alt="Gustoso Logo" />
           </a>
-          <nav>
-            <ul>
-              <li><a href="">Welcome</a></li>
-              <li><a href="">Menu</a></li>
-              <li><a href="">Reservations</a></li>
-              <li><a href="">News</a></li>
-              <li><a href="">Contact</a></li>
-            </ul>
-          </nav>
-          <div class="social">
-            <a href="">
-              <img src="assets/svg/twitter.svg" alt="Twitter Logo" />
-            </a>
-            <a href="">
-              <img src="assets/svg/facebook-logo.svg" alt="Facebook Logo" />
-            </a>
-            <a href="">
-              <img src="assets/svg/instagram-logo.svg" alt="Instagram Logo" />
-            </a>
+          <div id="js-nav">
+            <nav>
+              <ul>
+                <li><a href="">Welcome</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">Reservations</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </nav>
+            <div class="social">
+              <a href="">
+                <img src="assets/svg/twitter.svg" alt="Twitter Logo" />
+              </a>
+              <a href="">
+                <img src="assets/svg/facebook-logo.svg" alt="Facebook Logo" />
+              </a>
+              <a href="">
+                <img src="assets/svg/instagram-logo.svg" alt="Instagram Logo" />
+              </a>
+            </div>
           </div>
-          <a class="menu-icon" href="">
-            <img src="assets/svg/menu-icon.svg" alt="Menu icon" />
-          </a>
+          <button id="js-hamburger" class="menu-icon" type="button">
+            <!-- <img src="assets/svg/menu-icon.svg" alt="Menu icon" /> -->
+            <span id="js-top-line" class="top-line"></span>
+            <span id="js-center-line" class="center-line"></span>
+            <span id="js-bottom-line" class="bottom-line"></span>
+          </button>
         </div>
       </div>
     </header>
@@ -294,6 +299,6 @@
         </nav>
       </div>
     </footer>
-    <script type="module" src="js/main.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
