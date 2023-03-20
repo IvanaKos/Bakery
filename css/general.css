@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body.stop-transitions * {
+  transition: none !important;
+}
+
 *,
 *:before,
 *:after {
