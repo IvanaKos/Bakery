@@ -2,10 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body.stop-transitions * {
-  transition: none !important;
-}
-
 *,
 *:before,
 *:after {
@@ -14,6 +10,17 @@ body.stop-transitions * {
 
 body {
   font-family: "Alegreya", serif;
+}
+
+body.stop-transitions * {
+  transition: none !important;
+}
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
 }
 
 .wraper {

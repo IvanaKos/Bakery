@@ -65,8 +65,6 @@ header a {
   column-gap: 50px;
   width: 100%;
   justify-content: space-between;
-  /* transition: transform 0.7s, opacity 1s;
-  transform: translateX(100%); */
 }
 
 .menu-icon {
@@ -81,7 +79,7 @@ header a {
 .menu-icon span {
   position: absolute;
   left: 0;
-  background: #ffffff;
+  background: var(--neutral-light);
   width: inherit;
   height: 5px;
   transition: transform 0.5s, opacity 0.5s;
@@ -123,7 +121,6 @@ header a {
 
 @media only screen and (max-width: 1200px) {
   #js-nav {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -160,5 +157,21 @@ header a {
 
   #header-nav .wraper {
     justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #js-nav {
+    width: 50%;
+  }
+
+  #js-nav.show {
+    opacity: 0.95;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #js-nav {
+    width: 90%;
   }
 }
