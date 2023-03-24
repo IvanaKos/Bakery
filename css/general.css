@@ -80,8 +80,16 @@ p {
   letter-spacing: 1px;
 }
 
-button {
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
   font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
 @media only screen and (max-width: 992px) {
