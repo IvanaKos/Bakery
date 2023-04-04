@@ -1,28 +1,53 @@
-const hamburgerBtn = document.getElementById("js-hamburger");
-const topLine = document.getElementById("js-top-line");
-const centerLine = document.getElementById("js-center-line");
-const bottomLine = document.getElementById("js-bottom-line");
-const nav = document.getElementById("js-nav");
+//Responsive menu
 
-/* Open when someone clicks on the span element */
-function openNav() {
-  document.getElementById("my-nav").style.width = "35%";
+const mainHeader = document.getElementById("main-header");
+const hamburgerBtn = mainHeader.querySelector("#js-hamburger");
+const topLine = mainHeader.querySelector("#js-top-line");
+const centerLine = mainHeader.querySelector("#js-center-line");
+const bottomLine = mainHeader.querySelector("#js-bottom-line");
+const navOverlay = mainHeader.querySelector("#nav-overlay");
+
+const mediaQuery = "only screen and (max-width: 768px)";
+const mediaQueryList = window.matchMedia(mediaQuery);
+
+function openNav(event) {
+  mediaQueryList.addEventListener("change", openNav);
+  if (event.matches) {
+    navOverlay.style.width = "100%";
+  } else {
+    navOverlay.style.width = "35%";
+  }
 }
 
-/* Close when someone clicks on the "x" symbol inside the overlay */
 function closeNav() {
-  document.getElementById("my-nav").style.width = "0%";
+  navOverlay.style.width = "0%";
 }
 
-hamburgerBtn.addEventListener("click", () => {
+function activateMenu() {
   topLine.classList.toggle("active");
   centerLine.classList.toggle("active");
   bottomLine.classList.toggle("active");
 
   let activeBtn = topLine.classList.contains("active");
+
   if (activeBtn) {
-    openNav();
+    openNav(mediaQueryList);
   } else {
     closeNav();
   }
-});
+}
+
+hamburgerBtn.addEventListener("click", activateMenu);
+
+function resetMenu() {
+  if (window.innerWidth > 1200) {
+    topLine.classList.remove("active");
+    centerLine.classList.remove("active");
+    bottomLine.classList.remove("active");
+    closeNav();
+  }
+}
+
+window.addEventListener("resize", resetMenu);
+
+//END Responsive menu

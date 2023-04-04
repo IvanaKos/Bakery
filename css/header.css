@@ -6,7 +6,7 @@ header {
 
 #header-nav {
   padding: 20px 0;
-  background-color: rgba(var(--transoverlay), var(--opacity-transoverlay));
+  background-color: rgba(var(--trans-neutral-dark), 0.5);
 }
 
 #header-nav .wraper {
