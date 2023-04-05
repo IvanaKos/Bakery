@@ -10,12 +10,18 @@ const navOverlay = mainHeader.querySelector("#nav-overlay");
 const mediaQuery = "only screen and (max-width: 768px)";
 const mediaQueryList = window.matchMedia(mediaQuery);
 
-function openNav(event) {
-  mediaQueryList.addEventListener("change", openNav);
-  if (event.matches) {
-    navOverlay.style.width = "100%";
+let menuClicked = false;
+
+function openNav() {
+  if (menuClicked) {
+    mediaQueryList.addEventListener("change", openNav);
+    if (mediaQueryList.matches) {
+      navOverlay.style.width = "100%";
+    } else {
+      navOverlay.style.width = "35%";
+    }
   } else {
-    navOverlay.style.width = "35%";
+    closeNav();
   }
 }
 
@@ -31,8 +37,10 @@ function activateMenu() {
   let activeBtn = topLine.classList.contains("active");
 
   if (activeBtn) {
-    openNav(mediaQueryList);
+    menuClicked = true;
+    openNav();
   } else {
+    menuClicked = false;
     closeNav();
   }
 }
@@ -45,6 +53,7 @@ function resetMenu() {
     centerLine.classList.remove("active");
     bottomLine.classList.remove("active");
     closeNav();
+    menuClicked = false;
   }
 }
 
