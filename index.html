@@ -250,7 +250,52 @@
           </div>
           <div class="col-65">
             <div class="additional-recipe-card">
-              <button type="button">Full recipe</button>
+              <div class="recipe-img">
+                <img
+                  src="assets/img/additional-recipe-card-photo.png"
+                  alt="Sandwich photo"
+                />
+              </div>
+              <button
+                id="open-recipe-js"
+                class="open-recipe-button"
+                type="button"
+              >
+                Full recipe
+              </button>
+              <div class="recipe-details-container">
+                <div class="recipe-details-header">
+                  <h2>The Jibarito sandwich</h2>
+                  <h3>THE BEST SANDWICH YOU'VE EVER TASTED!</h3>
+                  <div class="tab-buttons">
+                    <button class="tab-button tab-active" data-tab="tab-1">
+                      Ingredients
+                    </button>
+                    <button class="tab-button" data-tab="tab-2">Method</button>
+                  </div>
+                </div>
+                <div class="recipe-details">
+                  <div class="tab-content">
+                    <div class="tab-pane active" data-tab="tab-1">
+                      <ul>
+                        <li>6</li>
+                        <li>500 g</li>
+                        <li>300 ml</li>
+                        <li>2 tbsp</li>
+                      </ul>
+                      <ul>
+                        <li>Nulla eget</li>
+                        <li>Class aptent</li>
+                        <li>Sed nibh purus</li>
+                        <li>Sed nibh purus</li>
+                      </ul>
+                    </div>
+                    <div class="tab-pane" data-tab="tab-2">
+                      <p>Tab 2 content goes here.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="prep-info-card">
                 <div class="prep-info secondary-info">
                   <span>Prep</span>
@@ -294,5 +339,6 @@
         </nav>
       </div>
     </footer>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
