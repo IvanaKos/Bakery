@@ -57,3 +57,24 @@ tabButtons.forEach((button) => {
       .classList.add("tab-active");
   });
 });
+
+//prep-info-card responsive
+
+const prepInfoCard = document.getElementById("prep-info");
+const mediaQuery = window.matchMedia("(max-width: 767px)");
+
+function togglePrepInfoCard() {
+  prepInfoCard.classList.toggle("hide-prep-info");
+}
+
+fullRecipeButton.addEventListener("click", function () {
+  if (mediaQuery.matches) {
+    togglePrepInfoCard();
+  }
+});
+
+mediaQuery.addListener(function (event) {
+  if (!event.matches) {
+    prepInfoCard.classList.remove("hide-prep-info");
+  }
+});
