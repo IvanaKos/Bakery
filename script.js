@@ -34,3 +34,26 @@ function openCloseButton() {
 }
 
 fullRecipeButton.addEventListener("click", openCloseButton);
+
+//Tab functionality
+
+const tabButtons = document.querySelectorAll(".tab-button");
+const tabContents = document.querySelectorAll(".tab-content .tab-pane");
+
+tabButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const tab = button.dataset.tab;
+
+    tabButtons.forEach((button) =>
+      button.classList.remove("tab-active", "tab-button-active")
+    );
+    tabContents.forEach((content) =>
+      content.classList.remove("tab-active", "tab-button-active")
+    );
+
+    button.classList.add("tab-active", "tab-button-active");
+    document
+      .querySelector(`.tab-content .tab-pane[data-tab="${tab}"]`)
+      .classList.add("tab-active");
+  });
+});

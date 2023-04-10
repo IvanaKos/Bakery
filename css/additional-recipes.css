@@ -160,24 +160,23 @@
   padding: 0 30px;
 }
 
-.tab-content {
-  padding-top: 40px;
-}
-
 .recipe-details-header h2 {
   font-size: 24px;
   margin-top: 40px;
+}
+
+.tab-content {
+  padding-top: 40px;
 }
 
 .tab-buttons {
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  gap: 40px;
 }
 
 .tab-button {
-  width: calc(50%-20px);
+  width: 120px;
   padding: 15px;
   font-size: 14px;
   font-weight: bold;
@@ -187,15 +186,37 @@
   text-align: center;
 }
 
-.tab-active {
+.tab-button-active {
   border-top: 2px solid var(--neutral-warm);
-  background-color: var(--background-light);
+  justify-content: center;
 }
 
 .tab-pane {
-  display: flex;
+  display: none;
   gap: 50px;
   color: var(--neutral-warm);
+  height: 100%;
+  overflow-y: auto;
+}
+
+.method-pane {
+  flex-direction: column;
+  gap: 0;
+  height: 275px;
+  justify-content: flex-start;
+}
+
+.method-pane span {
+  color: var(--neutral-dark);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.method-pane p {
+  margin-top: 15px;
+  margin-left: 15px;
+  padding: 15px 30px;
+  border-left: 1px solid var(--neutral-medium-variant);
 }
 
 .tab-pane ul:first-child {
@@ -209,6 +230,26 @@
 
 .tab-pane ul:first-child li {
   list-style-type: disc;
+}
+
+.tab-active {
+  display: flex;
+  background-color: var(--background-light);
+}
+
+.open-recipe-button {
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+  padding: 18px 30px;
+  background-color: var(--neutral-light);
+  border: 1px dashed var(--emphasis);
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--emphasis);
+  cursor: pointer;
+  z-index: 2;
 }
 
 .slide-in-card {
@@ -240,21 +281,6 @@
     transform: translateX(-100%);
     opacity: 1;
   }
-}
-
-.open-recipe-button {
-  position: absolute;
-  bottom: -30px;
-  left: -30px;
-  padding: 18px 30px;
-  background-color: var(--neutral-light);
-  border: 1px dashed var(--emphasis);
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: var(--emphasis);
-  cursor: pointer;
-  z-index: 2;
 }
 
 .prep-info-card {
