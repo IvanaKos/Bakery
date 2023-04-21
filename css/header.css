@@ -106,6 +106,12 @@ header a {
     bottom: 0px;
   }
 
+  #header-nav .wraper {
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
   .top-line.active {
     transform: translateY(15px) rotate(45deg);
   }
@@ -116,9 +122,5 @@ header a {
 
   .bottom-line.active {
     transform: translateY(-15px) rotate(-45deg);
-  }
-
-  #header-nav .wraper {
-    justify-content: space-around;
   }
 }

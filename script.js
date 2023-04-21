@@ -1,7 +1,7 @@
 //Responsive menu
 
 const mainHeader = document.getElementById("main-header");
-const hamburgerBtn = mainHeader.querySelector("#js-hamburger");
+const menuBtn = mainHeader.querySelector("#js-hamburger");
 const topLine = mainHeader.querySelector("#js-top-line");
 const centerLine = mainHeader.querySelector("#js-center-line");
 const bottomLine = mainHeader.querySelector("#js-bottom-line");
@@ -12,47 +12,60 @@ const mediaQueryList = window.matchMedia(mediaQuery);
 
 let menuClicked = false;
 
-function openNav() {
-  if (menuClicked) {
-    mediaQueryList.addEventListener("change", openNav);
-    if (mediaQueryList.matches) {
-      navOverlay.style.width = "100%";
-    } else {
-      navOverlay.style.width = "35%";
-    }
+function handleMenuWidth() {
+  if (mediaQueryList.matches) {
+    navOverlay.style.width = "100%";
   } else {
-    closeNav();
+    navOverlay.style.width = "35%";
   }
 }
 
-function closeNav() {
+function openMenu() {
+  if (menuClicked) {
+    handleMenuWidth();
+    mediaQueryList.addEventListener("change", openMenu);
+  } else {
+    closeMenu();
+  }
+}
+
+function closeMenu() {
   navOverlay.style.width = "0%";
 }
 
-function activateMenu() {
+function toggleMenuIcon() {
   topLine.classList.toggle("active");
   centerLine.classList.toggle("active");
   bottomLine.classList.toggle("active");
+}
 
-  let activeBtn = topLine.classList.contains("active");
+function deactivateMenuIcon() {
+  topLine.classList.remove("active");
+  centerLine.classList.remove("active");
+  bottomLine.classList.remove("active");
+}
 
-  if (activeBtn) {
+function handleOverlayActivation() {
+  if (menuClicked === false) {
     menuClicked = true;
-    openNav();
+    openMenu();
   } else {
     menuClicked = false;
-    closeNav();
+    closeMenu();
   }
 }
 
-hamburgerBtn.addEventListener("click", activateMenu);
+function handleMenuActivation() {
+  toggleMenuIcon();
+  handleOverlayActivation();
+}
+
+menuBtn.addEventListener("click", handleMenuActivation);
 
 function resetMenu() {
   if (window.innerWidth > 1200) {
-    topLine.classList.remove("active");
-    centerLine.classList.remove("active");
-    bottomLine.classList.remove("active");
-    closeNav();
+    deactivateMenuIcon();
+    closeMenu();
     menuClicked = false;
   }
 }
