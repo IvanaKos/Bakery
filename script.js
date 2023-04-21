@@ -1,13 +1,13 @@
 //Additional-recipes-card
 
 const additionalRecipesCard = document.querySelector(".additional-recipe-card");
-const fullRecipeButton = document.getElementById("open-recipe-js");
+const fullRecipeButton = additionalRecipesCard.querySelector("#open-recipe-js");
 const recipeHeader = additionalRecipesCard.querySelector(
   ".recipe-details-header"
 );
 const recipeDetails = additionalRecipesCard.querySelector(".recipe-details");
 const imgCard = additionalRecipesCard.querySelector(".recipe-img img");
-const prepInfoCard = document.getElementById("prep-info");
+const prepInfoCard = additionalRecipesCard.querySelector("#prep-info");
 
 var isRecipeDisplayed = false;
 
