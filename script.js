@@ -31,6 +31,7 @@ function openMenu() {
 
 function closeMenu() {
   navOverlay.style.width = "0%";
+  mediaQueryList.removeEventListener("change", openMenu);
 }
 
 function toggleMenuIcon() {
