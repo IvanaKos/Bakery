@@ -9,7 +9,7 @@ const recipeDetails = additionalRecipesCard.querySelector(".recipe-details");
 const imgCard = additionalRecipesCard.querySelector(".recipe-img img");
 const prepInfoCard = additionalRecipesCard.querySelector("#prep-info");
 
-var isRecipeDisplayed = false;
+let isRecipeDisplayed = false;
 
 function openHeader() {
   recipeHeader.classList.add("slide-in-card");
