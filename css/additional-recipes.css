@@ -180,6 +180,8 @@
   color: var(--neutral-dark);
   margin-top: 60px;
   text-align: center;
+  background-color: var(--neutral-light);
+  border-top: 2px solid var(--neutral-light);
 }
 
 .tab-button-active {
@@ -194,6 +196,25 @@
   height: 275px;
   overflow-y: auto;
   justify-content: flex-start;
+  animation: fade-in 0.4s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .method-pane {
@@ -230,6 +251,7 @@
 .tab-active {
   display: flex;
   background-color: var(--background-light);
+  opacity: 1;
 }
 
 .open-recipe-button {
@@ -285,6 +307,8 @@
   position: absolute;
   top: -32px;
   right: 0;
+  opacity: 1;
+  animation: fade-in 0.3s;
 }
 
 .additional-recipe-card .primary-info {
@@ -384,11 +408,13 @@
   }
 
   .hide-prep-info {
-    display: none;
+    animation: fade-out 0.2s forwards;
   }
 
   .prep-info-replacement {
     display: flex;
+    opacity: 0;
+    animation: fade-in 0.5s forwards;
   }
 
   .tab-button {
