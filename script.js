@@ -8,6 +8,9 @@ const recipeHeader = additionalRecipesCard.querySelector(
 const recipeDetails = additionalRecipesCard.querySelector(".recipe-details");
 const imgCard = additionalRecipesCard.querySelector(".recipe-img img");
 const prepInfoCard = additionalRecipesCard.querySelector("#prep-info");
+const prepInfoReplacement = additionalRecipesCard.querySelector(
+  ".prep-info-replacement"
+);
 
 let isRecipeDisplayed = false;
 
@@ -49,11 +52,23 @@ function hidePrepInfo() {
   prepInfoCard.classList.add("hide-prep-info");
 }
 
+function fadeInPrepInfoReplacement() {
+  prepInfoReplacement.classList.add("prep-info-replacement-visible");
+  prepInfoReplacement.classList.remove("hide-prep-info-replacement");
+}
+
+function fadeOutPrepInfoReplacement() {
+  prepInfoReplacement.classList.remove("prep-info-replacement-visible");
+  prepInfoReplacement.classList.add("hide-prep-info-replacement");
+}
+
 function handleWindowChange() {
   if (isRecipeDisplayed === true) {
     hidePrepInfo();
+    fadeInPrepInfoReplacement();
   } else {
     showPrepInfo();
+    fadeOutPrepInfoReplacement();
   }
 }
 
