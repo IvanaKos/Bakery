@@ -31,6 +31,16 @@ function closeDetails() {
   recipeDetails.classList.remove("slide-in-card");
 }
 
+function changeButtonToClose() {
+  fullRecipeButton.classList.add("animation");
+  fullRecipeButton.innerHTML = "CLOSE";
+}
+
+function changeButtonToRecipe() {
+  fullRecipeButton.innerHTML = "RECIPE";
+  fullRecipeButton.classList.remove("animation");
+}
+
 function showPrepInfo() {
   prepInfoCard.classList.remove("hide-prep-info");
 }
@@ -49,7 +59,7 @@ function handleWindowChange() {
 
 function openFullRecipe() {
   isRecipeDisplayed = true;
-  fullRecipeButton.innerHTML = "CLOSE";
+  changeButtonToClose();
   openHeader();
   openDetails();
   imgCard.classList.add("move-img");
@@ -58,7 +68,7 @@ function openFullRecipe() {
 
 function closeFullRecipe() {
   isRecipeDisplayed = false;
-  fullRecipeButton.innerHTML = "FULL RECIPE";
+  changeButtonToRecipe();
   closeHeader();
   closeDetails();
   imgCard.classList.remove("move-img");
