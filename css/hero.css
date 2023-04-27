@@ -39,7 +39,11 @@
 }
 
 .hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
+  flex-direction: column;
 }
 
 #hero p {
@@ -62,12 +66,33 @@
   color: var(--neutral-light);
 }
 
-h1::after {
+/* h1::after {
   content: "";
   display: block;
   height: 15px;
   background: center url(../assets/svg/dashed-wave.svg) no-repeat;
   margin-top: 50px;
+  animation: moveTheWave 2400ms linear;
+  stroke-dasharray: 0 16 101 16;
+} */
+
+.wave-container {
+  width: 200px;
+  margin-bottom: 72px;
+}
+
+.wave {
+  stroke-dasharray: 12;
+  stroke-dashoffset: 20;
+  animation: draw-line 1.5s linear forwards 1s;
+  clip-path: inset(0 100% 0 0);
+}
+
+@keyframes draw-line {
+  to {
+    stroke-dashoffset: 0;
+    clip-path: inset(0 0 0 0);
+  }
 }
 
 @media only screen and (max-width: 992px) {
