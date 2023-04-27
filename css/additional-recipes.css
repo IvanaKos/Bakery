@@ -254,7 +254,6 @@
   position: absolute;
   bottom: -30px;
   left: -30px;
-  /* padding: 12px 20px; */
   background-color: var(--neutral-light);
   border: 1px dashed var(--emphasis);
   font-size: 18px;
