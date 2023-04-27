@@ -6,7 +6,7 @@ header {
 
 #header-nav {
   padding: 20px 0;
-  background-color: rgba(var(--transoverlay), var(--opacity-transoverlay));
+  background-color: rgba(var(--trans-neutral-dark), 0.5);
 }
 
 #header-nav .wraper {
@@ -78,9 +78,49 @@ header a {
 
   .menu-icon {
     display: block;
+    position: relative;
+    margin-left: auto;
+    width: 45px;
+    height: 35px;
+    z-index: 1;
+  }
+
+  .menu-icon span {
+    position: absolute;
+    left: 0;
+    background: #ffffff;
+    width: inherit;
+    height: 5px;
+    transition: transform 0.5s, opacity 0.5s;
+  }
+
+  .top-line {
+    top: 0px;
+  }
+
+  .center-line {
+    top: 15px;
+  }
+
+  .bottom-line {
+    bottom: 0px;
   }
 
   #header-nav .wraper {
     justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .top-line.active {
+    transform: translateY(15px) rotate(45deg);
+  }
+
+  .center-line.active {
+    opacity: 0;
+  }
+
+  .bottom-line.active {
+    transform: translateY(-15px) rotate(-45deg);
   }
 }
