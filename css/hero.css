@@ -84,7 +84,7 @@
 .wave {
   stroke-dasharray: 12;
   stroke-dashoffset: 20;
-  animation: draw-line 1.5s linear forwards 1s;
+  animation: draw-line 1.5s cubic-bezier(0.29, 0.68, 0.74, 1.02) forwards 1s;
   clip-path: inset(0 100% 0 0);
 }
 
