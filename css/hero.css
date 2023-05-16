@@ -52,6 +52,17 @@
   margin-bottom: 70px;
 }
 
+.hero-content a {
+  background-color: rgba(86, 83, 76, 0.6);
+  border: 1px dashed var(--neutral-dark-variant);
+  padding: 20px 40px;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  color: var(--neutral-light);
+}
+
 .wave-container {
   width: 200px;
   margin-bottom: 72px;

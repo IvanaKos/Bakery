@@ -45,7 +45,7 @@ h1 {
   font-weight: bold;
   letter-spacing: 0.3rem;
   color: var(--neutral-light);
-  margin: 22% 0 6% 0;
+  margin: 18% 0 6% 0;
 }
 
 h2 {
@@ -94,15 +94,6 @@ input[type="reset"] {
 
 .fill-right {
   display: inline-block;
-  padding: 20px 40px;
-  margin: 0 auto 0 auto;
-  border: 1px dashed var(--neutral-dark-variant);
-  background-color: rgba(86, 83, 76, 0.6);
-  font-weight: bold;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 0.3rem;
-  color: var(--neutral-light);
   position: relative;
   overflow: hidden;
   z-index: 0;
@@ -127,8 +118,8 @@ input[type="reset"] {
 }
 
 .fill-right:hover {
-  color: var(--neutral-dark);
   opacity: 0.8;
+  color: var(--neutral-dark);
   background: var(--neutral-light);
   transition: color 0.3s ease 0s, background 0s ease 0.3s;
 }
