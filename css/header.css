@@ -56,7 +56,7 @@ header nav li a:before {
   height: 1px;
   bottom: -3px;
   left: 0;
-  background-color: var(--neutral-medium);
+  background-color: var(--neutral-light);
   visibility: hidden;
   transition: all 0.3s ease-in-out;
 }
