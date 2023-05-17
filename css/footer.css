@@ -24,6 +24,12 @@ footer a {
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--emphasis);
+  transition: color 0.3s ease;
 }
 
 @media only screen and (max-width: 1200px) {

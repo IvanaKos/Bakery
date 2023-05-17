@@ -49,21 +49,8 @@ header a {
   transition: 0.3s;
 }
 
-header nav li a:before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 1px;
-  bottom: -3px;
-  left: 0;
+header .underline:before {
   background-color: var(--neutral-light);
-  visibility: hidden;
-  transition: all 0.3s ease-in-out;
-}
-
-header nav li a:hover:before {
-  visibility: visible;
-  width: calc(100% - 0.3rem);
 }
 
 .social {

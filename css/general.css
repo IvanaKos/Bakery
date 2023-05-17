@@ -92,6 +92,23 @@ input[type="reset"] {
   outline: inherit;
 }
 
+.underline:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -3px;
+  left: 0;
+  background-color: var(--neutral-light);
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.underline:hover:before {
+  visibility: visible;
+  width: calc(100% - 0.3rem);
+}
+
 .fill-right {
   display: inline-block;
   position: relative;
