@@ -54,7 +54,7 @@
   padding: 20px 40px;
   margin: 0 auto 0 auto;
   border: 1px dashed var(--neutral-dark-variant);
-  background-color: rgba(var(--transoverlay), var(--opacity-transoverlay));
+  background-color: rgba(86, 83, 76, 0.6);
   font-weight: bold;
   font-size: 14px;
   text-transform: uppercase;

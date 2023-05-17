@@ -261,8 +261,90 @@
           </div>
           <div class="col-65">
             <div class="additional-recipe-card">
-              <button type="button">Full recipe</button>
-              <div class="prep-info-card">
+              <div class="recipe-img">
+                <img
+                  src="assets/img/additional-recipe-card-photo.png"
+                  alt="Sandwich photo"
+                />
+              </div>
+              <button
+                id="open-recipe-js"
+                class="open-recipe-button"
+                type="button"
+              >
+                Recipe
+              </button>
+              <div class="recipe-details-container">
+                <div class="recipe-details-header">
+                  <h2>The Jibarito sandwich</h2>
+                  <h3>THE BEST SANDWICH YOU'VE EVER TASTED!</h3>
+                  <div class="prep-info-replacement">
+                    <div class="prep-info secondary-info">
+                      <span>Prep</span>
+                      <span>15</span>
+                      <span>mins</span>
+                    </div>
+                    <div class="prep-info secondary-info">
+                      <span>Cook</span>
+                      <span>35</span>
+                      <span>mins</span>
+                    </div>
+                    <div class="prep-info">
+                      <span>Ready</span>
+                      <span>50</span>
+                      <span>mins</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="recipe-details">
+                  <div class="tab-buttons">
+                    <button
+                      class="tab-button tab-active tab-button-active"
+                      data-tab="tab-1"
+                    >
+                      Ingredients
+                    </button>
+                    <button class="tab-button" data-tab="tab-2">Method</button>
+                  </div>
+
+                  <div class="tab-content">
+                    <div class="tab-pane tab-active" data-tab="tab-1">
+                      <ul>
+                        <li>6</li>
+                        <li>500 g</li>
+                        <li>300 ml</li>
+                        <li>2 tbsp</li>
+                        <li>500 g</li>
+                        <li>300 ml</li>
+                      </ul>
+                      <ul>
+                        <li>Nulla eget</li>
+                        <li>Class aptent</li>
+                        <li>Sed nibh purus</li>
+                        <li>Sed nibh purus</li>
+                        <li>Nulla eget</li>
+                        <li>Class aptent</li>
+                      </ul>
+                    </div>
+                    <div class="tab-pane method-pane" data-tab="tab-2">
+                      <span>Step 1</span>
+                      <p>
+                        Donec vitae sapien ut libero venenatis faucibus. Nullam
+                        quis ante. Etiam sit amet orci eget eros faucibus
+                        tincidunt. Duis leo.
+                      </p>
+                      <span>Step 2</span>
+                      <p>
+                        Etiam sit amet orci eget eros faucibus tincidunt. Duis
+                        leo.Donec vitae sapien ut libero venenatis faucibus.
+                        Nullam quis ante. Etiam sit amet orci eget eros faucibus
+                        tincidunt. Duis leo.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="prep-info" class="prep-info-card">
                 <div class="prep-info secondary-info">
                   <span>Prep</span>
                   <span>15</span>
