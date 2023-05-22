@@ -22,6 +22,17 @@
           <a href="#">Reservations</a>
           <a href="#">News</a>
           <a href="#">Contact</a>
+          <div class="social">
+            <a href="">
+              <img src="assets/svg/twitter.svg" alt="Twitter Logo" />
+            </a>
+            <a href="">
+              <img src="assets/svg/facebook-logo.svg" alt="Facebook Logo" />
+            </a>
+            <a href="">
+              <img src="assets/svg/instagram-logo.svg" alt="Instagram Logo" />
+            </a>
+          </div>
         </div>
       </div>
       <div id="header-nav">
@@ -31,11 +42,17 @@
           </a>
           <nav>
             <ul>
-              <li><a href="">Welcome</a></li>
-              <li><a href="">Menu</a></li>
-              <li><a href="">Reservations</a></li>
-              <li><a href="">News</a></li>
-              <li><a href="">Contact</a></li>
+              <li>
+                <a class="underline" href="#hero">Welcome</a>
+              </li>
+              <li>
+                <a class="underline" href="#hero">Menu</a>
+              </li>
+              <li>
+                <a class="underline" href="">Reservations</a>
+              </li>
+              <li><a class="underline" href="">News</a></li>
+              <li><a class="underline" href="">Contact</a></li>
             </ul>
           </nav>
           <div class="social">
@@ -61,11 +78,39 @@
       <div class="wraper">
         <div class="hero-content">
           <h1>Pastry with love</h1>
+          <div class="wave-container">
+            <svg
+              class="wave"
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              width="200px"
+              height="15px"
+              viewBox="0 0 200 15"
+              enable-background="new 0 0 200 15"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  fill="none"
+                  stroke="#FFFFFF"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                  stroke-dasharray="12,12"
+                  d="M1.025,3.5
+		c24.742,0,24.742,8,49.485,8c24.742,0,24.742-8,49.484-8c24.745,0,24.745,8,49.49,8s24.745-8,49.49-8"
+                />
+              </g>
+            </svg>
+          </div>
           <p>
             We’re bringing you fresh ingredients every day<br />in ways you
             can’t resist.
           </p>
-          <a href="">Our Menu</a>
+          <a class="fill-right" href="">Our Menu</a>
         </div>
       </div>
     </section>
@@ -210,7 +255,7 @@
                 ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis
                 leo.
               </p>
-              <a class="open-menu-link" href="">READ</a>
+              <a class="open-menu-link fill-right" href="">READ</a>
             </div>
           </div>
           <div class="backpage"></div>
@@ -269,7 +314,7 @@
               </div>
               <button
                 id="open-recipe-js"
-                class="open-recipe-button"
+                class="open-recipe-button fill-right"
                 type="button"
               >
                 Recipe

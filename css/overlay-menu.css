@@ -15,7 +15,6 @@
   top: 25%;
   width: 100%;
   text-align: center;
-  margin-top: 30px;
 }
 
 .overlay a {
@@ -37,4 +36,10 @@
   top: 20px;
   right: 45px;
   font-size: 60px;
+}
+
+.overlay .social {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }

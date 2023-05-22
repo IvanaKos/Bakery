@@ -39,7 +39,11 @@
 }
 
 .hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
+  flex-direction: column;
 }
 
 #hero p {
@@ -48,13 +52,10 @@
   margin-bottom: 70px;
 }
 
-#hero a {
-  display: block;
-  width: 200px;
-  padding: 20px 40px;
-  margin: 0 auto 0 auto;
-  border: 1px dashed var(--neutral-dark-variant);
+.hero-content a {
   background-color: rgba(86, 83, 76, 0.6);
+  border: 1px dashed var(--neutral-dark-variant);
+  padding: 20px 40px;
   font-weight: bold;
   font-size: 14px;
   text-transform: uppercase;
@@ -62,12 +63,23 @@
   color: var(--neutral-light);
 }
 
-h1::after {
-  content: "";
-  display: block;
-  height: 15px;
-  background: center url(../assets/svg/dashed-wave.svg) no-repeat;
-  margin-top: 50px;
+.wave-container {
+  width: 200px;
+  margin-bottom: 72px;
+}
+
+.wave {
+  stroke-dasharray: 12;
+  stroke-dashoffset: 20;
+  animation: draw-line 1.5s cubic-bezier(0.29, 0.68, 0.74, 1.02) forwards 1s;
+  clip-path: inset(0 100% 0 0);
+}
+
+@keyframes draw-line {
+  to {
+    stroke-dashoffset: 0;
+    clip-path: inset(0 0 0 0);
+  }
 }
 
 @media only screen and (max-width: 992px) {
