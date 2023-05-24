@@ -12,6 +12,10 @@
     />
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.core.min.css"
+    />
   </head>
   <body>
     <header id="main-header">
@@ -170,32 +174,116 @@
         </div>
       </div>
     </section>
+
     <section id="recipes">
       <div class="wraper">
         <div class="recipe-card">
-          <div class="recipe-side-photo">
-            <img
-              src="assets/img/recipe-side-photo.png"
-              alt="Pancake with blueberries"
-            />
-          </div>
-          <div class="recipe-main">
-            <div class="recipe-description">
-              <h2>Tasty pancakes</h2>
-              <h3>Season Favourite</h3>
-              <p>
-                Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien
-                ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet
-                orci eget eros faucibus.
-              </p>
-              <div class="prep-info primary-info">
-                <span>Ready in</span>
-                <span>40</span>
-                <span>mins</span>
-              </div>
+          <div id="slider-1" class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide recipe-side-photo">
+                  <img
+                    src="assets/img/slider-imgs/slider-photo-1.png"
+                    alt="Pancake with blueberries"
+                  />
+                </li>
+                <li class="glide__slide">
+                  <img
+                    src="assets/img/slider-imgs/slider-photo-2.png"
+                    alt="Pancake with blueberries"
+                  />
+                </li>
+                <li class="glide__slide">
+                  <img
+                    src="assets/img/slider-imgs/slider-photo-3.png"
+                    alt="Pancake with blueberries"
+                  />
+                </li>
+              </ul>
             </div>
+          </div>
+          <div id="slider-2" class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <div class="recipe-description">
+                    <h2>Tasty pancakes</h2>
+                    <h3>Season Favourite</h3>
+                    <p>
+                      Maecenas nec odio et ante tincidunt tempus. Donec vitae
+                      sapien ut libero venenatis faucibus. Nullam quis ante.
+                      Etiam sit amet orci eget eros faucibus.
+                    </p>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="recipe-description">
+                    <h2>lkjhakjdhalsd</h2>
+                    <h3>Season Favourite</h3>
+                    <p>
+                      Maecenas nec odio et ante tincidunt tempus. Donec vitae
+                      sapien ut libero venenatis faucibus. Nullam quis ante.
+                      Etiam sit amet orci eget eros faucibus.
+                    </p>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="recipe-description">
+                    <h2>aaaaaaaaa</h2>
+                    <h3>Season Favourite</h3>
+                    <p>
+                      Maecenas nec odio et ante tincidunt tempus. Donec vitae
+                      sapien ut libero venenatis faucibus. Nullam quis ante.
+                      Etiam sit amet orci eget eros faucibus.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="slider-3" class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <div class="prep-info primary-info">
+                    <span>Ready in</span>
+                    <span>40</span>
+                    <span>mins</span>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="prep-info primary-info">
+                    <span>Ready in</span>
+                    <span>10</span>
+                    <span>mins</span>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="prep-info primary-info">
+                    <span>Ready in</span>
+                    <span>30</span>
+                    <span>mins</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="glide__arrows slider-arrows" data-glide-el="controls">
+            <button
+              id="prevButton"
+              class="glide__arrow glide__arrow--left arrow-left"
+              data-glide-dir="<"
+            ></button>
+            <button
+              id="nextButton"
+              class="glide__arrow glide__arrow--right arrow-right"
+              data-glide-dir=">"
+            ></button>
+          </div>
+
+          <!-- <div class="recipe-main">
             <div class="slider-container">
-              <button class="arrow-left" type="button"></button>
               <div class="preview-photo">
                 <a href="">
                   <img src="assets/img/slider-preview-1.png" alt="" />
@@ -213,7 +301,7 @@
               </div>
               <button class="arrow-right" type="button"></button>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -433,5 +521,44 @@
       </div>
     </footer>
     <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+      const glideInstances = []; // Create an array to store Glide instances
+
+      glideInstances.push(
+        new Glide("#slider-1", {
+          type: "carousel",
+          startAt: 0,
+          perView: 1,
+        }).mount()
+      );
+
+      glideInstances.push(
+        new Glide("#slider-2", {
+          type: "carousel",
+          startAt: 0,
+          perView: 1,
+        }).mount()
+      );
+
+      glideInstances.push(
+        new Glide("#slider-3", {
+          type: "carousel",
+          startAt: 0,
+          perView: 1,
+        }).mount()
+      );
+
+      const prevButton = document.getElementById("prevButton");
+      const nextButton = document.getElementById("nextButton");
+
+      prevButton.addEventListener("click", function () {
+        glideInstances.forEach((glide) => glide.go("<"));
+      });
+
+      nextButton.addEventListener("click", function () {
+        glideInstances.forEach((glide) => glide.go(">"));
+      });
+    </script>
   </body>
 </html>
