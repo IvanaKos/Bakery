@@ -1,7 +1,7 @@
 #specialty {
   overflow: hidden;
   padding: 100px 0;
-  background: center/cover url(../assets/img/specialty-background.png) no-repeat;
+  background: center/cover url(../assets/img/specialty-background.jpg) no-repeat;
 }
 
 #specialty .col-50 {
