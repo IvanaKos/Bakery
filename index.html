@@ -508,72 +508,7 @@
         </nav>
       </div>
     </footer>
-    <script type="text/javascript" src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-    <!-- <script>
-      const glideInstances = []; // Create an array to store Glide instances
-
-      glideInstances.push(
-        new Glide("#slider-1", {
-          type: "carousel",
-          startAt: 0,
-          perView: 1,
-        }).mount()
-      );
-
-      glideInstances.push(
-        new Glide("#slider-2", {
-          type: "carousel",
-          startAt: 0,
-          perView: 1,
-        }).mount()
-      );
-
-      glideInstances.push(
-        new Glide("#slider-3", {
-          type: "carousel",
-          startAt: 0,
-          perView: 1,
-        }).mount()
-      );
-
-      const prevButton = document.getElementById("prevButton");
-      const nextButton = document.getElementById("nextButton");
-
-      prevButton.addEventListener("click", function () {
-        glideInstances.forEach((glide) => glide.go("<"));
-      });
-
-      nextButton.addEventListener("click", function () {
-        glideInstances.forEach((glide) => glide.go(">"));
-      });
-    </script> -->
-    <script>
-      const glideOptions = {
-        type: "carousel",
-        startAt: 0,
-        perView: 1,
-        swipeThreshold: false,
-        dragThreshold: false,
-      };
-
-      const glideInstances = [];
-
-      for (let i = 1; i <= 3; i++) {
-        const sliderId = `#slider-${i}`;
-        glideInstances.push(new Glide(sliderId, glideOptions).mount());
-      }
-
-      const prevButton = document.getElementById("prevButton");
-      const nextButton = document.getElementById("nextButton");
-
-      prevButton.addEventListener("click", function () {
-        glideInstances.forEach((glide) => glide.go("<"));
-      });
-
-      nextButton.addEventListener("click", function () {
-        glideInstances.forEach((glide) => glide.go(">"));
-      });
-    </script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
