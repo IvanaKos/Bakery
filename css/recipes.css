@@ -86,11 +86,23 @@
 }
 
 .arrow-left {
-  background-image: url(../assets/svg/arrow-left.svg);
+  background-image: url(../assets/svg/arrow-left-light.svg);
+  transition: 0.3s;
 }
 
 .arrow-right {
-  background-image: url(../assets/svg/arrow-right.svg);
+  background-image: url(../assets/svg/arrow-right-light.svg);
+  transition: 0.3s;
+}
+
+.arrow-left:hover {
+  background-image: url(../assets/svg/arrow-left-dark.svg);
+  transition: 0.3s;
+}
+
+.arrow-right:hover {
+  background-image: url(../assets/svg/arrow-right-dark.svg);
+  transition: 0.3s;
 }
 
 @media only screen and (max-width: 992px) {
