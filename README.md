@@ -1,11 +1,10 @@
+Project Name:
 Gustoso Bakery
-
-Project type:
-Bakery Website
 
 ---
 
-Webpage content:
+Project type:
+Bakery Website
 
 ---
 
@@ -23,6 +22,7 @@ Bakery
         I       I________header.css
         I       I________hero.css
         I       I________offer.css
+        I       I________overlay-menu.css
         I       I________prep-cards.css
         I       I________recipes.css
         I       I________reset.css
