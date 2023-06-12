@@ -194,3 +194,31 @@ tabButtons.forEach((button) => {
     );
   });
 });
+
+// Recipe Slider
+
+const glideOptions = {
+  type: "carousel",
+  startAt: 0,
+  perView: 1,
+  swipeThreshold: false,
+  dragThreshold: false,
+};
+
+const glideInstances = [];
+
+for (let i = 1; i <= 3; i++) {
+  const sliderId = `#slider-${i}`;
+  glideInstances.push(new Glide(sliderId, glideOptions).mount());
+}
+
+const prevButton = document.getElementById("prevButton");
+const nextButton = document.getElementById("nextButton");
+
+prevButton.addEventListener("click", function () {
+  glideInstances.forEach((glide) => glide.go("<"));
+});
+
+nextButton.addEventListener("click", function () {
+  glideInstances.forEach((glide) => glide.go(">"));
+});
