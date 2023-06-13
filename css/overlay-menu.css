@@ -5,7 +5,7 @@
   z-index: 1;
   right: 0;
   top: 0;
-  background-color: rgba(var(--trans-neutral-dark), 0.9);
+  background-color: rgba(var(--trans-neutral-dark), 0.95);
   overflow-x: hidden;
   transition: 0.5s;
 }

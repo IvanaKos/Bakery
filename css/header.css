@@ -5,8 +5,8 @@ header {
 }
 
 #header-nav {
-  padding: 20px 0;
-  background-color: rgba(var(--trans-neutral-dark), 0.5);
+  padding: 7px 0;
+  background-color: rgba(var(--trans-neutral-dark), 0.85);
 }
 
 #header-nav .wraper {
