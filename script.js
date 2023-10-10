@@ -72,17 +72,13 @@ function resetMenu() {
   }
 }
 
-function menuLinkIsClicked() {
-  menuLinks.forEach((element) => {
-    element.addEventListener("click", () => {
-      menuClicked = false;
-      deactivateMenuIcon();
-      closeMenu();
-    });
+menuLinks.forEach((element) => {
+  element.addEventListener("click", () => {
+    menuClicked = false;
+    deactivateMenuIcon();
+    closeMenu();
   });
-}
-
-menuLinkIsClicked();
+});
 
 window.addEventListener("resize", resetMenu);
 
