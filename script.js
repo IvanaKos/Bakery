@@ -6,6 +6,7 @@ const topLine = mainHeader.querySelector("#js-top-line");
 const centerLine = mainHeader.querySelector("#js-center-line");
 const bottomLine = mainHeader.querySelector("#js-bottom-line");
 const navOverlay = mainHeader.querySelector("#nav-overlay");
+const menuLinks = mainHeader.querySelectorAll(".overlay-content a");
 
 const mediaQuery = "only screen and (max-width: 768px)";
 const mediaQueryList = window.matchMedia(mediaQuery);
@@ -70,6 +71,18 @@ function resetMenu() {
     menuClicked = false;
   }
 }
+
+function menuLinkIsClicked() {
+  menuLinks.forEach((element) => {
+    element.addEventListener("click", () => {
+      menuClicked = false;
+      deactivateMenuIcon();
+      closeMenu();
+    });
+  });
+}
+
+menuLinkIsClicked();
 
 window.addEventListener("resize", resetMenu);
 
